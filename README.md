@@ -1,4 +1,4 @@
 cubian-firmware
 ===============
 
-Firmware files for cubieboard1(AllWinner A10)
+Firmware files for cubieboard2(AllWinner A20)

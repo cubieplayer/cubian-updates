@@ -9,8 +9,10 @@ alias symbol:em28xx_write_reg em28xx
 alias symbol:drm_fb_get_bpp_depth drm
 alias symbol:nf_nat_sdp_port_hook nf_conntrack_sip
 alias symbol:drm_mm_clean drm
+alias symbol:ircomm_disconnect_request ircomm
 alias symbol:rtl92c_phy_iq_calibrate rtl8192c_common
 alias symbol:rtl92c_phy_ap_calibrate rtl8192c_common
+alias symbol:hci_find_ltk_by_addr bluetooth
 alias symbol:nf_conntrack_l4proto_tcp4 nf_conntrack
 alias symbol:arpt_do_table arp_tables
 alias symbol:xt_proto_fini x_tables
@@ -45,12 +47,14 @@ alias symbol:rtl_ps_set_rf_state rtlwifi
 alias symbol:llc_add_pack llc
 alias symbol:xfrm6_tunnel_alloc_spi xfrm6_tunnel
 alias symbol:ath9k_hw_deinit ath9k_hw
+alias symbol:bt_info bluetooth
 alias symbol:soc_mbus_get_fmtdesc soc_mediabus
 alias symbol:l2tp_tunnel_delete l2tp_core
 alias symbol:inet_diag_bc_sk inet_diag
 alias symbol:ath9k_hw_abortpcurecv ath9k_hw
 alias symbol:rtlwifi_rate_mapping rtlwifi
 alias symbol:nf_nat_pptp_hook_expectfn nf_conntrack_pptp
+alias symbol:hci_register_dev bluetooth
 alias symbol:irda_param_pack irda
 alias symbol:snd_rawmidi_drain_output snd_rawmidi
 alias symbol:__nf_conntrack_confirm nf_conntrack
@@ -65,6 +69,7 @@ alias symbol:ieee80211_queue_delayed_work mac80211
 alias symbol:tm6000_set_audio_bitrate tm6000
 alias symbol:drm_fb_helper_pan_display drm_kms_helper
 alias symbol:ath9k_hw_check_alive ath9k_hw
+alias symbol:irda_unregister_dongle sir_dev
 alias symbol:ath9k_hw_setopmode ath9k_hw
 alias symbol:rtl92c_dm_init_rate_adaptive_mask rtl8192c_common
 alias symbol:nf_ct_invert_tuple nf_conntrack
@@ -105,9 +110,11 @@ alias symbol:xc5000_attach xc5000
 alias symbol:snd_seq_kernel_client_dispatch snd_seq
 alias symbol:drm_global_item_unref drm
 alias symbol:snd_usbmidi_input_start snd_usbmidi_lib
+alias symbol:hci_free_dev bluetooth
 alias symbol:nf_ct_l3protos nf_conntrack
 alias symbol:drm_av_sync_delay drm
 alias symbol:drm_fb_helper_debug_leave drm_kms_helper
+alias symbol:hci_send_sco bluetooth
 alias symbol:rtl92c_dm_check_txpower_tracking rtl8192c_common
 alias symbol:irias_add_integer_attrib irda
 alias symbol:ieee80211_disable_dyn_ps mac80211
@@ -124,6 +131,7 @@ alias symbol:ppp_register_net_channel ppp_generic
 alias symbol:ieee80211_stop_tx_ba_session mac80211
 alias symbol:rxrpc_unregister_security af_rxrpc
 alias symbol:drm_select_eld drm
+alias symbol:bt_accept_dequeue bluetooth
 alias symbol:videobuf_mmap_mapper videobuf_core
 alias symbol:__ieee80211_get_radio_led_name mac80211
 alias symbol:ath9k_hw_getnf ath9k_hw
@@ -135,6 +143,7 @@ alias symbol:drm_err drm
 alias symbol:l2tp_tunnel_find l2tp_core
 alias symbol:cx2341x_ext_ctrls cx2341x
 alias symbol:ip6t_unregister_table ip6_tables
+alias symbol:ircomm_control_request ircomm
 alias symbol:ath9k_hw_computetxtime ath9k_hw
 alias symbol:nf_ct_invert_tuplepr nf_conntrack
 alias symbol:ath9k_hw_init_btcoex_hw ath9k_hw
@@ -178,6 +187,8 @@ alias symbol:videobuf_read_stream videobuf_core
 alias symbol:ath9k_hw_setpower ath9k_hw
 alias symbol:xfrm6_tunnel_register tunnel6
 alias symbol:nf_ct_get_tuple nf_conntrack
+alias symbol:ircomm_open ircomm
+alias symbol:ircomm_close ircomm
 alias symbol:em28xx_capture_start em28xx
 alias symbol:drm_mode_config_cleanup drm
 alias symbol:xt_check_match x_tables
@@ -217,12 +228,14 @@ alias symbol:irlmp_connect_response irda
 alias symbol:nf_ct_delete_from_lists nf_conntrack
 alias symbol:ppp_output_wakeup ppp_generic
 alias symbol:RTMP_Usb_AutoPM_Put_Interface rt5370sta
+alias symbol:bt_err bluetooth
 alias symbol:_rtl92c_phy_calculate_bit_shift rtl8192c_common
 alias symbol:rtl8192_phy_check_is_legal_rfpath rtl8192c_common
 alias symbol:btmrvl_check_evtpkt btmrvl
 alias symbol:drm_fb_helper_single_fb_probe drm_kms_helper
 alias symbol:ath9k_cmn_init_crypto ath9k_common
 alias symbol:vb2_put_vma videobuf2_memops
+alias symbol:ircomm_data_request ircomm
 alias symbol:wimax_report_rfkill_sw wimax
 alias symbol:cx231xx_unregister_extension cx231xx
 alias symbol:xt_table_unlock x_tables
@@ -241,6 +254,7 @@ alias symbol:async_wrap_skb irda
 alias symbol:i2c_connect_client goodix_touch
 alias symbol:nf_conntrack_l4proto_tcp6 nf_conntrack
 alias symbol:snd_seq_device_new snd_seq_device
+alias symbol:hci_conn_change_link_key bluetooth
 alias symbol:__nf_ct_ext_add nf_conntrack
 alias symbol:snd_seq_create_kernel_client snd_seq
 alias symbol:l2tp_session_find_nth l2tp_core
@@ -273,12 +287,14 @@ alias symbol:rtl92c_phy_query_bb_reg rtl8192c_common
 alias symbol:xt_hook_unlink x_tables
 alias symbol:ath9k_hw_setantenna ath9k_hw
 alias symbol:drm_mode_equal drm
+alias symbol:bt_to_errno bluetooth
 alias symbol:ebt_register_table ebtables
 alias symbol:cx2341x_handler_init cx2341x
 alias symbol:drm_mode_sort drm
 alias symbol:nf_nat_seq_adjust_hook nf_conntrack_ipv4
 alias symbol:ath9k_hw_releasetxqueue ath9k_hw
 alias symbol:drm_mm_search_free drm
+alias symbol:hci_conn_put_device bluetooth
 alias symbol:async_unwrap_char irda
 alias symbol:drm_core_ioremapfree drm
 alias symbol:drm_global_item_ref drm
@@ -292,6 +308,7 @@ alias symbol:drm_prime_remove_imported_buf_handle drm
 alias symbol:drm_ht_remove_item drm
 alias symbol:drm_vblank_get drm
 alias symbol:drm_vblank_off drm
+alias symbol:baswap bluetooth
 alias symbol:snd_rawmidi_kernel_open snd_rawmidi
 alias symbol:slhc_remember slhc
 alias symbol:drm_mm_put_block drm
@@ -340,12 +357,14 @@ alias symbol:ct_sip_parse_numerical_param nf_conntrack_sip
 alias symbol:drm_irq_install drm
 alias symbol:rtl92c_phy_rf_config rtl8192c_common
 alias symbol:rtl92c_phy_set_io rtl8192c_common
+alias symbol:bt_sock_unregister bluetooth
 alias symbol:ath9k_hw_setuptxqueue ath9k_hw
 alias symbol:inet_diag_register inet_diag
 alias symbol:ath9k_hw_set_sta_beacon_timers ath9k_hw
 alias symbol:rtl_init_rfkill rtlwifi
 alias symbol:wimax_msg_send wimax
 alias symbol:tea5761_autodetection tea5761
+alias symbol:hci_conn_hold_device bluetooth
 alias symbol:nf_nat_protocol_register nf_nat
 alias symbol:ieee80211_rate_control_register mac80211
 alias symbol:inet_diag_unregister inet_diag
@@ -377,6 +396,7 @@ alias symbol:vb2_plane_cookie videobuf2_core
 alias symbol:drm_calc_vbltimestamp_from_scanoutpos drm
 alias symbol:drm_mode_validate_clocks drm
 alias symbol:drm_rmmap_locked drm
+alias symbol:irda_register_dongle sir_dev
 alias symbol:drm_mm_init_scan_with_range drm
 alias symbol:ar9003_mci_send_message ath9k_hw
 alias symbol:rtl_fw_cb rtlwifi
@@ -421,6 +441,7 @@ alias symbol:ieee80211_sta_block_awake mac80211
 alias symbol:nf_conntrack_find_get nf_conntrack
 alias symbol:snd_rawmidi_transmit_ack snd_rawmidi
 alias symbol:nf_nat_sip_expect_hook nf_conntrack_sip
+alias symbol:hci_register_cb bluetooth
 alias symbol:ath9k_cmn_padpos ath9k_common
 alias symbol:wimax_state_get wimax
 alias symbol:ath9k_hw_gettsf32 ath9k_hw
@@ -462,6 +483,7 @@ alias symbol:snd_seq_expand_var_event snd_seq
 alias symbol:ip_set_get_ipaddr4 ip_set
 alias symbol:ip_set_get_ipaddr6 ip_set
 alias symbol:vb2_write videobuf2_core
+alias symbol:ircomm_flow_request ircomm
 alias symbol:irias_add_octseq_attrib irda
 alias symbol:cx231xx_register_extension cx231xx
 alias symbol:videobuf_queue_to_vaddr videobuf_core
@@ -483,6 +505,7 @@ alias symbol:drm_mode_create_dithering_property drm
 alias symbol:ieee80211_get_tkip_p1k_iv mac80211
 alias symbol:drm_poll drm
 alias symbol:ath_gen_timer_free ath9k_hw
+alias symbol:hci_suspend_dev bluetooth
 alias symbol:nf_ct_expect_find_get nf_conntrack
 alias symbol:xt_socket_put_sk xt_socket
 alias symbol:rtl92c_dm_write_dig rtl8192c_common
@@ -496,11 +519,14 @@ alias symbol:ip_vs_proto_get ip_vs
 alias symbol:drm_prime_add_imported_buf_handle drm
 alias symbol:ieee80211_find_sta mac80211
 alias symbol:ieee80211_tx_status_irqsafe mac80211
+alias symbol:bt_sock_unlink bluetooth
 alias symbol:drm_fb_helper_panic drm_kms_helper
 alias symbol:ar9003_paprd_init_table ath9k_hw
 alias symbol:videobuf_mmap_setup videobuf_core
 alias symbol:drm_mmap drm
 alias symbol:drm_kms_helper_poll_fini drm_kms_helper
+alias symbol:hci_conn_security bluetooth
+alias symbol:bt_debugfs bluetooth
 alias symbol:ppp_register_channel ppp_generic
 alias symbol:rtl92c_dm_watchdog rtl8192c_common
 alias symbol:ieee80211_stop_queues mac80211
@@ -523,6 +549,7 @@ alias symbol:ath9k_hw_beaconinit ath9k_hw
 alias symbol:drm_fb_helper_restore drm_kms_helper
 alias symbol:register_snap_client psnap
 alias symbol:drm_fb_helper_check_var drm_kms_helper
+alias symbol:bt_accept_unlink bluetooth
 alias symbol:nf_ct_gre_keymap_add nf_conntrack_proto_gre
 alias symbol:soc_mbus_bytes_per_line soc_mediabus
 alias symbol:tm6000_init_digital_mode tm6000
@@ -546,6 +573,7 @@ alias symbol:stp_proto_unregister stp
 alias symbol:snd_usbmidi_input_stop snd_usbmidi_lib
 alias symbol:videobuf_poll_stream videobuf_core
 alias symbol:drm_fb_helper_restore_fbdev_mode drm_kms_helper
+alias symbol:bt_sock_reclassify_lock bluetooth
 alias symbol:ipt_register_table ip_tables
 alias symbol:drm_crtc_cleanup drm
 alias symbol:ath9k_cmn_get_curchannel ath9k_common
@@ -557,9 +585,11 @@ alias symbol:ppp_channel_index ppp_generic
 alias symbol:rtl92c_set_fw_pwrmode_cmd rtl8192c_common
 alias symbol:efuse_read_1byte rtlwifi
 alias symbol:hashbin_get_next irda
+alias symbol:sirdev_set_dongle sir_dev
 alias symbol:drm_noop drm
 alias symbol:ath9k_hw_setrxabort ath9k_hw
 alias symbol:nf_nat_pptp_hook_exp_gre nf_conntrack_pptp
+alias symbol:bt_sock_poll bluetooth
 alias symbol:snd_seq_kernel_client_enqueue_blocking snd_seq
 alias symbol:drm_debug drm
 alias symbol:drm_mode_copy drm
@@ -573,6 +603,7 @@ alias symbol:cx2341x_handler_set_50hz cx2341x
 alias symbol:drm_mode_find_dmt drm
 alias symbol:slhc_compress slhc
 alias symbol:l2tp_session_create l2tp_core
+alias symbol:batostr bluetooth
 alias symbol:rtl92c_phy_update_txpower_dbm rtl8192c_common
 alias symbol:rxrpc_kernel_end_call af_rxrpc
 alias symbol:ath9k_hw_startpcureceive ath9k_hw
@@ -593,6 +624,7 @@ alias symbol:hashbin_remove irda
 alias symbol:drm_gem_object_release drm
 alias symbol:drm_property_add_enum drm
 alias symbol:drm_helper_resume_force_mode drm_kms_helper
+alias symbol:hci_conn_switch_role bluetooth
 alias symbol:drm_fb_helper_init drm_kms_helper
 alias symbol:br_should_route_hook bridge
 alias symbol:em28xx_gpio_set em28xx
@@ -607,6 +639,7 @@ alias symbol:l2tp_tunnel_find_nth l2tp_core
 alias symbol:register_ip_vs_app ip_vs
 alias symbol:nf_nat_get_offset nf_nat
 alias symbol:drm_property_destroy drm
+alias symbol:bt_sock_wait_state bluetooth
 alias symbol:xt_recseq x_tables
 alias symbol:drm_i2c_encoder_destroy drm
 alias symbol:ieee80211_sta_set_buffered mac80211
@@ -615,16 +648,19 @@ alias symbol:vb2_querybuf videobuf2_core
 alias symbol:ath9k_hw_btcoex_enable ath9k_hw
 alias symbol:wimax_msg_data wimax
 alias symbol:l2tp_nl_unregister_ops l2tp_netlink
+alias symbol:bt_sock_stream_recvmsg bluetooth
 alias symbol:ath9k_hw_gettxbuf ath9k_hw
 alias symbol:drm_property_create drm
 alias symbol:nf_ct_gre_keymap_destroy nf_conntrack_proto_gre
 alias symbol:nfnetlink_subsys_register nfnetlink
 alias symbol:ath9k_hw_gen_timer_start ath9k_hw
+alias symbol:hci_le_ltk_reply bluetooth
 alias symbol:gspca_dev_probe gspca_main
 alias symbol:snd_seq_event_port_detach snd_seq
 alias symbol:drm_encoder_init drm
 alias symbol:l2tp_udp_encap_recv l2tp_core
 alias symbol:garp_unregister_application garp
+alias symbol:hci_find_ltk bluetooth
 alias symbol:btmrvl_interrupt btmrvl
 alias symbol:cx2341x_update cx2341x
 alias symbol:vb2_plane_vaddr videobuf2_core
@@ -661,6 +697,7 @@ alias symbol:ath9k_hw_btcoex_init_3wire ath9k_hw
 alias symbol:drm_order drm
 alias symbol:drm_prime_init_file_private drm
 alias symbol:drm_plane_init drm
+alias symbol:bt_sock_recvmsg bluetooth
 alias symbol:ath_key_config ath
 alias symbol:drm_get_connector_name drm
 alias symbol:drm_property_create_enum drm
@@ -696,6 +733,7 @@ alias symbol:sys_imageblit sysimgblt
 alias symbol:cx2341x_ctrl_query cx2341x
 alias symbol:llc_mac_hdr_init llc
 alias symbol:nf_conntrack_max nf_conntrack
+alias symbol:hci_conn_check_secure bluetooth
 alias symbol:ath9k_hw_enable_interrupts ath9k_hw
 alias symbol:ath9k_hw_write_associd ath9k_hw
 alias symbol:drm_get_minor drm
@@ -714,6 +752,7 @@ alias symbol:irlmp_open_lsap irda
 alias symbol:exportfs_decode_fh exportfs
 alias symbol:llc_sap_open llc
 alias symbol:drm_vblank_put drm
+alias symbol:sirdev_raw_read sir_dev
 alias symbol:ath_hw_cycle_counters_update ath
 alias symbol:__nf_nat_mangle_tcp_packet nf_nat
 alias symbol:rxrpc_kernel_abort_call af_rxrpc
@@ -733,10 +772,12 @@ alias symbol:pppox_unbind_sock pppox
 alias symbol:_rtl92c_phy_rf_serial_write rtl8192c_common
 alias symbol:mfd_clone_cell mfd_core
 alias symbol:soc_camera_apply_board_flags soc_camera
+alias symbol:hci_recv_frame bluetooth
 alias symbol:ath9k_cmn_count_streams ath9k_common
 alias symbol:vb2_common_vm_ops videobuf2_memops
 alias symbol:snd_seq_delete_kernel_client snd_seq
 alias symbol:drm_edid_block_valid drm
+alias symbol:hci_connect bluetooth
 alias symbol:ieee80211_chswitch_done mac80211
 alias symbol:ath9k_hw_reset_calvalid ath9k_hw
 alias symbol:drm_gem_prime_fd_to_handle drm
@@ -768,6 +809,7 @@ alias symbol:drm_helper_hpd_irq_event drm_kms_helper
 alias symbol:ump_dd_secure_id_get ump
 alias symbol:ar9003_hw_bb_watchdog_dbg_info ath9k_hw
 alias symbol:drm_get_platform_dev drm
+alias symbol:hci_get_route bluetooth
 alias symbol:_rtl92c_phy_init_bb_rf_register_definition rtl8192c_common
 alias symbol:soc_camera_lock soc_camera
 alias symbol:drm_mode_create_scaling_mode_property drm
@@ -804,9 +846,11 @@ alias symbol:drm_mode_destroy drm
 alias symbol:l2tp_tunnel_create l2tp_core
 alias symbol:cx231xx_disable656 cx231xx
 alias symbol:ath9k_hw_set_tsfadjust ath9k_hw
+alias symbol:hci_le_conn_update bluetooth
 alias symbol:nf_ct_alloc_hashtable nf_conntrack
 alias symbol:slhc_free slhc
 alias symbol:drm_gem_mmap drm
+alias symbol:hci_recv_fragment bluetooth
 alias symbol:ieee80211_beacon_loss mac80211
 alias symbol:vb2_prepare_buf videobuf2_core
 alias symbol:snd_rawmidi_kernel_release snd_rawmidi
@@ -814,6 +858,7 @@ alias symbol:cx231xx_unmute_audio cx231xx
 alias symbol:ath9k_hw_bstuck_nfcal ath9k_hw
 alias symbol:drm_add_edid_modes drm
 alias symbol:nfnetlink_set_err nfnetlink
+alias symbol:bt_sock_register bluetooth
 alias symbol:irias_delete_object irda
 alias symbol:irias_object_change_attribute irda
 alias symbol:snd_midi_event_free snd_seq_midi_event
@@ -827,9 +872,11 @@ alias symbol:nf_conntrack_l4proto_udp6 nf_conntrack
 alias symbol:rtl_cam_get_free_entry rtlwifi
 alias symbol:nf_conntrack_l3proto_register nf_conntrack
 alias symbol:nf_conntrack_l4proto_register nf_conntrack
+alias symbol:sirdev_write_complete sir_dev
 alias symbol:ieee80211_rx mac80211
 alias symbol:ieee80211_rx_irqsafe mac80211
 alias symbol:nf_nat_sdp_media_hook nf_conntrack_sip
+alias symbol:sirdev_receive sir_dev
 alias symbol:drm_ut_debug_printk drm
 alias symbol:drm_rmmap drm
 alias symbol:rxrpc_kernel_data_delivered af_rxrpc
@@ -853,9 +900,11 @@ alias symbol:rtl92c_set_fw_joinbss_report_cmd rtl8192c_common
 alias symbol:ath_reg_notifier_apply ath
 alias symbol:ieee80211_enable_rssi_reports mac80211
 alias symbol:unregister_ip_vs_pe ip_vs
+alias symbol:hci_conn_check_link_mode bluetooth
 alias symbol:__nf_conntrack_helper_find nf_conntrack
 alias symbol:ppp_unit_number ppp_generic
 alias symbol:ppp_input_error ppp_generic
+alias symbol:hci_unregister_cb bluetooth
 alias symbol:ebt_do_table ebtables
 alias symbol:ip_set_type_unregister ip_set
 alias symbol:videobuf_queue_is_busy videobuf_core
@@ -868,11 +917,13 @@ alias symbol:nf_ct_port_nlattr_tuple_size nf_conntrack
 alias symbol:drm_mode_probed_add drm
 alias symbol:xt_hook_link x_tables
 alias symbol:rtl92c_phy_sw_chnl rtl8192c_common
+alias symbol:ircomm_connect_request ircomm
 alias symbol:ath9k_hw_reset ath9k_hw
 alias symbol:drm_buffer_free drm
 alias symbol:vb2_streamon videobuf2_core
 alias symbol:cx231xx_init_isoc cx231xx
 alias symbol:drm_mode_connector_update_edid_property drm
+alias symbol:bt_sock_ioctl bluetooth
 alias symbol:drm_mode_height drm
 alias symbol:arpt_register_table arp_tables
 alias symbol:rtl_usb_disconnect rtlwifi
@@ -897,6 +948,7 @@ alias symbol:ar9003_paprd_populate_single_table ath9k_hw
 alias symbol:ip_set_hostmask_map ip_set
 alias symbol:register_ip_vs_pe ip_vs
 alias symbol:videobuf_alloc_vb videobuf_core
+alias symbol:sirdev_set_dtr_rts sir_dev
 alias symbol:ieee80211_proberesp_get mac80211
 alias symbol:_rtl92c_phy_fw_rf_serial_write rtl8192c_common
 alias symbol:unregister_snap_client psnap
@@ -944,6 +996,7 @@ alias symbol:rtl_ps_disable_nic rtlwifi
 alias symbol:drm_fb_helper_single_add_all_connectors drm_kms_helper
 alias symbol:drm_mode_set_name drm
 alias symbol:ieee80211_free_hw mac80211
+alias symbol:hci_resume_dev bluetooth
 alias symbol:pppox_ioctl pppox
 alias symbol:i2c_dp_aux_add_bus drm_kms_helper
 alias symbol:em28xx_write_ac97 em28xx
@@ -972,6 +1025,7 @@ alias symbol:ump_dd_phys_block_get ump
 alias symbol:videobuf_waiton videobuf_core
 alias symbol:ppp_register_compressor ppp_generic
 alias symbol:drm_edid_is_valid drm
+alias symbol:hci_le_start_enc bluetooth
 alias symbol:rtl_usb_suspend rtlwifi
 alias symbol:drm_platform_init drm
 alias symbol:drm_platform_exit drm
@@ -992,8 +1046,10 @@ alias symbol:drm_vblank_offdelay drm
 alias symbol:drm_format_num_planes drm_kms_helper
 alias symbol:nf_ct_helper_ext_add nf_conntrack
 alias symbol:rate_control_send_low mac80211
+alias symbol:hci_recv_stream_fragment bluetooth
 alias symbol:snd_rawmidi_kernel_read snd_rawmidi
 alias symbol:drm_gem_object_init drm
+alias symbol:hci_unregister_dev bluetooth
 alias symbol:slhc_uncompress slhc
 alias symbol:cx231xx_set_alt_setting cx231xx
 alias symbol:drm_sysfs_hotplug_event drm
@@ -1036,6 +1092,7 @@ alias symbol:nf_conntrack_alloc nf_conntrack
 alias symbol:drm_fb_helper_fill_var drm_kms_helper
 alias symbol:ieee80211_probereq_get mac80211
 alias symbol:ieee80211_send_bar mac80211
+alias symbol:hci_alloc_dev bluetooth
 alias symbol:drm_timestamp_precision drm
 alias symbol:ieee80211_rate_control_unregister mac80211
 alias symbol:drm_property_create_range drm
@@ -1051,6 +1108,7 @@ alias symbol:mt2063_attach mt2063
 alias symbol:rtl92c_phy_sw_chnl_callback rtl8192c_common
 alias symbol:ieee80211_ap_probereq_get mac80211
 alias symbol:ieee80211_resume_disconnect mac80211
+alias symbol:bt_accept_enqueue bluetooth
 alias symbol:nf_nat_sdp_session_hook nf_conntrack_sip
 alias symbol:register_8022_client p8022
 alias symbol:_rtl92c_phy_fw_rf_serial_read rtl8192c_common
@@ -1062,6 +1120,7 @@ alias symbol:rtl_cam_mark_invalid rtlwifi
 alias symbol:ath_printk ath
 alias symbol:ath9k_hw_disable ath9k_hw
 alias symbol:ath9k_hw_resettxqueue ath9k_hw
+alias symbol:ircomm_connect_response ircomm
 alias symbol:drm_find_cea_extension drm
 alias symbol:ip_set_add ip_set
 alias symbol:ip_set_del ip_set
@@ -1087,6 +1146,7 @@ alias symbol:drm_fb_helper_set_par drm_kms_helper
 alias symbol:ieee80211_get_operstate mac80211
 alias symbol:gspca_auto_gain_n_exposure gspca_main
 alias symbol:videobuf_vmalloc_free videobuf_vmalloc
+alias symbol:bt_sock_link bluetooth
 alias symbol:xt_register_target x_tables
 alias symbol:ip_vs_proto_data_get ip_vs
 alias symbol:btmrvl_process_event btmrvl
@@ -1112,6 +1172,7 @@ alias symbol:videobuf_stop videobuf_core
 alias symbol:_rtl92c_phy_bb8192c_config_parafile rtl8192c_common
 alias symbol:drm_connector_init drm
 alias symbol:cx231xx_send_usb_command cx231xx
+alias symbol:sirdev_raw_write sir_dev
 alias symbol:ath_gen_timer_isr ath9k_hw
 alias symbol:vb2_queue_release videobuf2_core
 alias symbol:vb2_vmalloc_memops videobuf2_vmalloc
@@ -1121,12 +1182,16 @@ alias symbol:xt_find_target x_tables
 alias symbol:drm_mode_object_find drm
 alias symbol:pptp_msg_name nf_conntrack_pptp
 alias symbol:nf_nat_follow_master nf_nat
+alias symbol:snd_use_lock_sync_helper snd_seq
 alias symbol:lib80211_crypt_delayed_deinit lib80211
+alias symbol:sirdev_get_instance sir_dev
+alias symbol:sirdev_put_instance sir_dev
 alias symbol:xt_register_targets x_tables
 alias symbol:ieee80211_iterate_active_interfaces mac80211
 alias symbol:nf_nat_pptp_hook_outbound nf_conntrack_pptp
 alias symbol:drm_mode_legacy_fb_format drm
 alias symbol:nat_t120_hook nf_conntrack_h323
+alias symbol:hci_send_acl bluetooth
 alias symbol:alloc_irdadev irda
 alias symbol:inet_sk_diag_fill inet_diag
 alias symbol:arpt_unregister_table arp_tables

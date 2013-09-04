@@ -17,10 +17,10 @@ kernel/drivers/gpu/drm/udl/udl.ko: kernel/drivers/gpu/drm/drm_kms_helper.ko kern
 kernel/drivers/gpu/mali/ump/ump.ko:
 kernel/drivers/gpu/mali/mali/mali.ko: kernel/drivers/gpu/mali/ump/ump.ko
 kernel/drivers/misc/sunxi-dbgreg.ko:
+kernel/drivers/misc/pwm-sunxi.ko:
 kernel/drivers/mfd/mfd-core.ko:
 kernel/drivers/mfd/wl1273-core.ko: kernel/drivers/mfd/mfd-core.ko
 kernel/drivers/scsi/scsi_wait_scan.ko:
-kernel/drivers/spi/spi_sunxi.ko:
 kernel/drivers/net/wireless/rtlwifi/rtlwifi.ko: kernel/net/mac80211/mac80211.ko
 kernel/drivers/net/wireless/rtlwifi/rtl8192c/rtl8192c-common.ko: kernel/net/mac80211/mac80211.ko
 kernel/drivers/net/wireless/rtlwifi/rtl8192cu/rtl8192cu.ko: kernel/drivers/net/wireless/rtlwifi/rtl8192c/rtl8192c-common.ko kernel/drivers/net/wireless/rtlwifi/rtlwifi.ko kernel/net/mac80211/mac80211.ko
@@ -33,6 +33,14 @@ kernel/drivers/net/wireless/ath/ath9k/ath9k_common.ko: kernel/drivers/net/wirele
 kernel/drivers/net/wireless/ath/ath.ko:
 kernel/drivers/net/wireless/bcm4330/bcm4330.ko:
 kernel/drivers/net/bonding/bonding.ko:
+kernel/drivers/net/irda/irda-usb.ko: kernel/net/irda/irda.ko kernel/lib/crc-ccitt.ko
+kernel/drivers/net/irda/stir4200.ko: kernel/net/irda/irda.ko kernel/lib/crc-ccitt.ko
+kernel/drivers/net/irda/mcs7780.ko: kernel/net/irda/irda.ko kernel/lib/crc-ccitt.ko
+kernel/drivers/net/irda/irtty-sir.ko: kernel/drivers/net/irda/sir-dev.ko kernel/net/irda/irda.ko kernel/lib/crc-ccitt.ko
+kernel/drivers/net/irda/sir-dev.ko: kernel/net/irda/irda.ko kernel/lib/crc-ccitt.ko
+kernel/drivers/net/irda/kingsun-sir.ko: kernel/net/irda/irda.ko kernel/lib/crc-ccitt.ko
+kernel/drivers/net/irda/ksdazzle-sir.ko: kernel/net/irda/irda.ko kernel/lib/crc-ccitt.ko
+kernel/drivers/net/irda/ks959-sir.ko: kernel/net/irda/irda.ko kernel/lib/crc-ccitt.ko
 kernel/drivers/net/ppp/ppp_generic.ko: kernel/drivers/net/slip/slhc.ko
 kernel/drivers/net/ppp/ppp_async.ko: kernel/drivers/net/ppp/ppp_generic.ko kernel/drivers/net/slip/slhc.ko kernel/lib/crc-ccitt.ko
 kernel/drivers/net/ppp/bsd_comp.ko: kernel/drivers/net/ppp/ppp_generic.ko kernel/drivers/net/slip/slhc.ko
@@ -48,16 +56,12 @@ kernel/drivers/net/usb/ipheth.ko:
 kernel/drivers/usb/serial/ftdi_sio.ko:
 kernel/drivers/usb/serial/pl2303.ko:
 kernel/drivers/usb/gadget/g_file_storage.ko:
-kernel/drivers/input/keyboard/sun4i-keypad.ko:
-kernel/drivers/input/keyboard/sun4i-keyboard.ko:
-kernel/drivers/input/keyboard/sun4i-ir.ko:
 kernel/drivers/input/keyboard/hv2605.ko:
 kernel/drivers/input/touchscreen/ft5x_ts.ko:
 kernel/drivers/input/touchscreen/goodix_touch.ko:
 kernel/drivers/input/touchscreen/gt811_ts.ko:
 kernel/drivers/input/touchscreen/gt818_ts.ko:
 kernel/drivers/input/touchscreen/zt8031.ko:
-kernel/drivers/input/touchscreen/sun4i-ts.ko:
 kernel/drivers/gsensor/mecs.ko:
 kernel/drivers/gsensor/mxc622x.ko:
 kernel/drivers/gsensor/bma250.ko:
@@ -67,7 +71,6 @@ kernel/drivers/media/common/tuners/tea5761.ko:
 kernel/drivers/media/common/tuners/xc5000.ko:
 kernel/drivers/media/common/tuners/xc4000.ko:
 kernel/drivers/media/common/tuners/mt2063.ko:
-kernel/drivers/media/video/sun4i/sun4i_avs.ko:
 kernel/drivers/media/video/tuner.ko: kernel/drivers/media/common/tuners/tuner-xc2028.ko kernel/drivers/media/common/tuners/xc5000.ko kernel/drivers/media/common/tuners/tea5761.ko kernel/drivers/media/common/tuners/xc4000.ko
 kernel/drivers/media/video/saa7115.ko:
 kernel/drivers/media/video/tvp5150.ko:
@@ -164,6 +167,8 @@ kernel/drivers/media/video/soc_camera.ko: kernel/drivers/media/video/videobuf-co
 kernel/drivers/media/video/soc_mediabus.ko:
 kernel/drivers/media/video/soc_camera_platform.ko:
 kernel/drivers/media/video/uvc/uvcvideo.ko: kernel/drivers/media/video/videobuf2-core.ko kernel/drivers/media/video/videobuf2-vmalloc.ko kernel/drivers/media/video/videobuf2-memops.ko
+kernel/drivers/media/video/sunxi/sunxi_cedar_mod.ko:
+kernel/drivers/media/video/sunxi/sunxi_avs.ko:
 kernel/drivers/media/radio/si470x/radio-usb-si470x.ko:
 kernel/drivers/media/radio/si470x/radio-i2c-si470x.ko:
 kernel/drivers/media/radio/si4713-i2c.ko:
@@ -175,18 +180,18 @@ kernel/drivers/media/radio/radio-tea5764.ko:
 kernel/drivers/media/radio/saa7706h.ko:
 kernel/drivers/media/radio/tef6862.ko:
 kernel/drivers/media/radio/radio-wl1273.ko:
-kernel/drivers/bluetooth/bcm203x.ko:
-kernel/drivers/bluetooth/bpa10x.ko:
-kernel/drivers/bluetooth/bfusb.ko:
-kernel/drivers/bluetooth/btusb.ko:
-kernel/drivers/bluetooth/btsdio.ko:
-kernel/drivers/bluetooth/ath3k.ko:
-kernel/drivers/bluetooth/btmrvl.ko:
-kernel/drivers/bluetooth/btmrvl_sdio.ko: kernel/drivers/bluetooth/btmrvl.ko
 kernel/drivers/cpufreq/cpufreq_stats.ko:
 kernel/drivers/cpufreq/cpufreq_powersave.ko:
 kernel/drivers/cpufreq/cpufreq_userspace.ko:
 kernel/drivers/cpufreq/cpufreq_conservative.ko:
+kernel/drivers/bluetooth/bcm203x.ko: kernel/net/bluetooth/bluetooth.ko
+kernel/drivers/bluetooth/bpa10x.ko: kernel/net/bluetooth/bluetooth.ko
+kernel/drivers/bluetooth/bfusb.ko: kernel/net/bluetooth/bluetooth.ko
+kernel/drivers/bluetooth/btusb.ko: kernel/net/bluetooth/bluetooth.ko
+kernel/drivers/bluetooth/btsdio.ko: kernel/net/bluetooth/bluetooth.ko
+kernel/drivers/bluetooth/ath3k.ko: kernel/net/bluetooth/bluetooth.ko
+kernel/drivers/bluetooth/btmrvl.ko: kernel/net/bluetooth/bluetooth.ko
+kernel/drivers/bluetooth/btmrvl_sdio.ko: kernel/drivers/bluetooth/btmrvl.ko kernel/net/bluetooth/bluetooth.ko
 kernel/sound/core/oss/snd-mixer-oss.ko:
 kernel/sound/core/oss/snd-pcm-oss.ko: kernel/sound/core/oss/snd-mixer-oss.ko
 kernel/sound/core/snd-hwdep.ko:
@@ -385,7 +390,6 @@ kernel/net/ipv6/xfrm6_mode_beet.ko:
 kernel/net/ipv6/mip6.ko:
 kernel/net/ipv6/sit.ko:
 kernel/net/ipv6/ip6_tunnel.ko: kernel/net/ipv6/tunnel6.ko
-kernel/net/bluetooth/hidp/hidp.ko:
 kernel/net/8021q/8021q.ko: kernel/net/802/garp.ko kernel/net/802/stp.ko kernel/net/llc/llc.ko
 kernel/net/wireless/lib80211.ko:
 kernel/net/llc/llc.ko:
@@ -413,6 +417,14 @@ kernel/net/bridge/netfilter/ebt_log.ko: kernel/net/netfilter/x_tables.ko
 kernel/net/bridge/netfilter/ebt_ulog.ko: kernel/net/netfilter/x_tables.ko
 kernel/net/bridge/netfilter/ebt_nflog.ko: kernel/net/netfilter/x_tables.ko
 kernel/net/irda/irda.ko: kernel/lib/crc-ccitt.ko
+kernel/net/irda/irlan/irlan.ko: kernel/net/irda/irda.ko kernel/lib/crc-ccitt.ko
+kernel/net/irda/irnet/irnet.ko: kernel/net/irda/irda.ko kernel/lib/crc-ccitt.ko kernel/drivers/net/ppp/ppp_generic.ko kernel/drivers/net/slip/slhc.ko
+kernel/net/irda/ircomm/ircomm.ko: kernel/net/irda/irda.ko kernel/lib/crc-ccitt.ko
+kernel/net/irda/ircomm/ircomm-tty.ko: kernel/net/irda/ircomm/ircomm.ko kernel/net/irda/irda.ko kernel/lib/crc-ccitt.ko
+kernel/net/bluetooth/bluetooth.ko:
+kernel/net/bluetooth/rfcomm/rfcomm.ko: kernel/net/bluetooth/bluetooth.ko
+kernel/net/bluetooth/bnep/bnep.ko: kernel/net/bluetooth/bluetooth.ko
+kernel/net/bluetooth/hidp/hidp.ko: kernel/net/bluetooth/bluetooth.ko
 kernel/net/rxrpc/af-rxrpc.ko:
 kernel/net/rxrpc/rxkad.ko: kernel/net/rxrpc/af-rxrpc.ko
 kernel/net/l2tp/l2tp_core.ko:
