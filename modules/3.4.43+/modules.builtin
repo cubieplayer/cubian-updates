@@ -78,7 +78,8 @@ kernel/drivers/base/regmap/regmap-spi.ko
 kernel/drivers/block/brd.ko
 kernel/drivers/block/loop.ko
 kernel/drivers/block/cryptoloop.ko
-kernel/drivers/block/sunxi_nand/nfd/nand.ko
+kernel/drivers/block/sun7i_nand/nand.ko
+kernel/drivers/block/sun7i_nand/lib/sun7i_libnand.ko
 kernel/drivers/cdrom/cdrom.ko
 kernel/drivers/char/sunxi_g2d/g2d_23.ko
 kernel/drivers/connector/cn.ko
