@@ -60,8 +60,56 @@ kernel/drivers/net/ppp/pppolac.ko: kernel/drivers/net/ppp/pppox.ko kernel/driver
 kernel/drivers/net/ppp/pppopns.ko: kernel/drivers/net/ppp/pppox.ko kernel/drivers/net/ppp/ppp_generic.ko kernel/drivers/net/slip/slhc.ko
 kernel/drivers/net/slip/slhc.ko:
 kernel/drivers/net/usb/ipheth.ko:
+kernel/drivers/usb/serial/aircable.ko:
+kernel/drivers/usb/serial/ark3116.ko:
+kernel/drivers/usb/serial/belkin_sa.ko:
+kernel/drivers/usb/serial/ch341.ko:
+kernel/drivers/usb/serial/cp210x.ko:
+kernel/drivers/usb/serial/cyberjack.ko:
+kernel/drivers/usb/serial/cypress_m8.ko:
+kernel/drivers/usb/serial/usb_debug.ko:
+kernel/drivers/usb/serial/digi_acceleport.ko:
+kernel/drivers/usb/serial/io_edgeport.ko:
+kernel/drivers/usb/serial/io_ti.ko:
+kernel/drivers/usb/serial/empeg.ko:
+kernel/drivers/usb/serial/f81232.ko:
 kernel/drivers/usb/serial/ftdi_sio.ko:
+kernel/drivers/usb/serial/funsoft.ko:
+kernel/drivers/usb/serial/garmin_gps.ko:
+kernel/drivers/usb/serial/hp4x.ko:
+kernel/drivers/usb/serial/ipaq.ko:
+kernel/drivers/usb/serial/ipw.ko: kernel/drivers/usb/serial/usb_wwan.ko
+kernel/drivers/usb/serial/ir-usb.ko:
+kernel/drivers/usb/serial/iuu_phoenix.ko:
+kernel/drivers/usb/serial/keyspan.ko:
+kernel/drivers/usb/serial/keyspan_pda.ko:
+kernel/drivers/usb/serial/kl5kusb105.ko:
+kernel/drivers/usb/serial/kobil_sct.ko:
+kernel/drivers/usb/serial/mct_u232.ko:
+kernel/drivers/usb/serial/metro-usb.ko:
+kernel/drivers/usb/serial/mos7720.ko:
+kernel/drivers/usb/serial/mos7840.ko:
+kernel/drivers/usb/serial/moto_modem.ko:
+kernel/drivers/usb/serial/navman.ko:
+kernel/drivers/usb/serial/omninet.ko:
+kernel/drivers/usb/serial/opticon.ko:
+kernel/drivers/usb/serial/option.ko: kernel/drivers/usb/serial/usb_wwan.ko
+kernel/drivers/usb/serial/oti6858.ko:
 kernel/drivers/usb/serial/pl2303.ko:
+kernel/drivers/usb/serial/qcaux.ko:
+kernel/drivers/usb/serial/qcserial.ko: kernel/drivers/usb/serial/usb_wwan.ko
+kernel/drivers/usb/serial/safe_serial.ko:
+kernel/drivers/usb/serial/siemens_mpi.ko:
+kernel/drivers/usb/serial/sierra.ko:
+kernel/drivers/usb/serial/spcp8x5.ko:
+kernel/drivers/usb/serial/ssu100.ko:
+kernel/drivers/usb/serial/symbolserial.ko:
+kernel/drivers/usb/serial/usb_wwan.ko:
+kernel/drivers/usb/serial/ti_usb_3410_5052.ko:
+kernel/drivers/usb/serial/visor.ko:
+kernel/drivers/usb/serial/whiteheat.ko:
+kernel/drivers/usb/serial/vivopay-serial.ko:
+kernel/drivers/usb/serial/zio.ko:
 kernel/drivers/usb/gadget/g_file_storage.ko:
 kernel/drivers/usb/class/cdc-acm.ko:
 kernel/drivers/usb/class/usblp.ko:
