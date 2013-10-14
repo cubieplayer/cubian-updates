@@ -16,6 +16,7 @@ alias symbol:arpt_do_table arp_tables
 alias symbol:xt_proto_fini x_tables
 alias symbol:ath9k_hw_disable_interrupts ath9k_hw
 alias symbol:drm_mode_connector_detach_encoder drm
+alias symbol:usb_wwan_open usb_wwan
 alias symbol:register_pppox_proto pppox
 alias symbol:cx231xx_dev_uninit cx231xx
 alias symbol:videobuf_mmap_free videobuf_core
@@ -58,6 +59,7 @@ alias symbol:rtl92c_phy_set_bb_reg rtl8192c_common
 alias symbol:ip_set_name_byindex ip_set
 alias symbol:ump_dd_handle_create_from_secure_id ump
 alias symbol:irlmp_discovery_request irda
+alias symbol:usb_wwan_suspend usb_wwan
 alias symbol:drm_mode_create_from_cmdline_mode drm
 alias symbol:ip_vs_conn_in_get ip_vs
 alias symbol:soc_mbus_config_compatible soc_mediabus
@@ -110,6 +112,7 @@ alias symbol:nf_ct_l3protos nf_conntrack
 alias symbol:drm_av_sync_delay drm
 alias symbol:drm_fb_helper_debug_leave drm_kms_helper
 alias symbol:rtl92c_dm_check_txpower_tracking rtl8192c_common
+alias symbol:usb_wwan_write_room usb_wwan
 alias symbol:irias_add_integer_attrib irda
 alias symbol:ieee80211_disable_dyn_ps mac80211
 alias symbol:ath9k_hw_reset_tsf ath9k_hw
@@ -127,6 +130,7 @@ alias symbol:rxrpc_unregister_security af_rxrpc
 alias symbol:drm_select_eld drm
 alias symbol:videobuf_mmap_mapper videobuf_core
 alias symbol:__ieee80211_get_radio_led_name mac80211
+alias symbol:usb_wwan_close usb_wwan
 alias symbol:ath9k_hw_getnf ath9k_hw
 alias symbol:rtl92c_phy_lc_calibrate rtl8192c_common
 alias symbol:soc_camera_unlock soc_camera
@@ -307,6 +311,7 @@ alias symbol:nf_tproxy_assign_sock nf_tproxy_core
 alias symbol:nfnetlink_unicast nfnetlink
 alias symbol:snd_mixer_oss_ioctl_card snd_mixer_oss
 alias symbol:drm_get_last_vbltimestamp drm
+alias symbol:usb_wwan_disconnect usb_wwan
 alias symbol:ar9003_paprd_enable ath9k_hw
 alias symbol:nf_conntrack_in nf_conntrack
 alias symbol:drm_mode_remove drm
@@ -391,6 +396,7 @@ alias symbol:drm_kms_helper_poll_enable drm_kms_helper
 alias symbol:ieee80211_generic_frame_duration mac80211
 alias symbol:nf_ct_port_nla_policy nf_conntrack
 alias symbol:em28xx_uninit_isoc em28xx
+alias symbol:usb_wwan_set_termios usb_wwan
 alias symbol:hashbin_delete irda
 alias symbol:ath9k_hw_disable_mib_counters ath9k_hw
 alias symbol:nat_q931_hook nf_conntrack_h323
@@ -432,6 +438,7 @@ alias symbol:wimax_state_get wimax
 alias symbol:ath9k_hw_gettsf32 ath9k_hw
 alias symbol:ath_key_delete ath
 alias symbol:videobuf_to_vmalloc videobuf_vmalloc
+alias symbol:usb_wwan_chars_in_buffer usb_wwan
 alias symbol:ath_is_49ghz_allowed ath
 alias symbol:mfd_cell_disable mfd_core
 alias symbol:nf_nat_sdp_addr_hook nf_conntrack_sip
@@ -456,6 +463,7 @@ alias symbol:irda_init_max_qos_capabilies irda
 alias symbol:irias_find_object irda
 alias symbol:ipt_unregister_table ip_tables
 alias symbol:vb2_buffer_done videobuf2_core
+alias symbol:usb_wwan_write usb_wwan
 alias symbol:ath9k_hw_getchan_noise ath9k_hw
 alias symbol:xt_unregister_target x_tables
 alias symbol:ieee80211_start_tx_ba_session mac80211
@@ -482,6 +490,8 @@ alias symbol:nf_nat_ftp_hook nf_conntrack_ftp
 alias symbol:ar9003_mci_get_interrupt ath9k_hw
 alias symbol:mfd_remove_devices mfd_core
 alias symbol:nf_ct_deliver_cached_events nf_conntrack
+alias symbol:usb_wwan_tiocmget usb_wwan
+alias symbol:usb_wwan_tiocmset usb_wwan
 alias symbol:ath9k_cmn_update_ichannel ath9k_common
 alias symbol:drm_mm_init_scan drm
 alias symbol:btmrvl_add_card btmrvl
@@ -664,6 +674,7 @@ alias symbol:proc_irda irda
 alias symbol:rxrpc_kernel_reject_call af_rxrpc
 alias symbol:__nf_ct_kill_acct nf_conntrack
 alias symbol:slhc_init slhc
+alias symbol:usb_wwan_release usb_wwan
 alias symbol:ath9k_hw_btcoex_init_3wire ath9k_hw
 alias symbol:drm_order drm
 alias symbol:drm_prime_init_file_private drm
@@ -861,6 +872,7 @@ alias symbol:rtl92c_set_fw_joinbss_report_cmd rtl8192c_common
 alias symbol:ath_reg_notifier_apply ath
 alias symbol:ieee80211_enable_rssi_reports mac80211
 alias symbol:unregister_ip_vs_pe ip_vs
+alias symbol:usb_wwan_resume usb_wwan
 alias symbol:__nf_conntrack_helper_find nf_conntrack
 alias symbol:ppp_unit_number ppp_generic
 alias symbol:ppp_input_error ppp_generic
@@ -929,6 +941,7 @@ alias symbol:nf_ct_gre_keymap_flush nf_conntrack_proto_gre
 alias symbol:drm_gem_free_mmap_offset drm
 alias symbol:__videobuf_mmap_setup videobuf_core
 alias symbol:ath_hw_keyreset ath
+alias symbol:usb_wwan_dtr_rts usb_wwan
 alias symbol:ump_dd_phys_blocks_get ump
 alias symbol:nfnetlink_send nfnetlink
 alias symbol:nfnl_lock nfnetlink
@@ -1028,6 +1041,7 @@ alias symbol:drm_fb_helper_blank drm_kms_helper
 alias symbol:nf_conntrack_tuple_taken nf_conntrack
 alias symbol:mfd_add_devices mfd_core
 alias symbol:ip_set_range_to_cidr ip_set
+alias symbol:usb_wwan_ioctl usb_wwan
 alias symbol:drm_mode_config_reset drm
 alias symbol:llc_build_and_send_ui_pkt llc
 alias symbol:xt_register_matches x_tables
@@ -1062,6 +1076,7 @@ alias symbol:rtl92c_phy_sw_chnl_callback rtl8192c_common
 alias symbol:ieee80211_ap_probereq_get mac80211
 alias symbol:ieee80211_resume_disconnect mac80211
 alias symbol:nf_nat_sdp_session_hook nf_conntrack_sip
+alias symbol:usb_wwan_startup usb_wwan
 alias symbol:register_8022_client p8022
 alias symbol:_rtl92c_phy_fw_rf_serial_read rtl8192c_common
 alias symbol:btmrvl_remove_card btmrvl
