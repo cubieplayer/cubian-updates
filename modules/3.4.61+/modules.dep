@@ -18,11 +18,13 @@ kernel/drivers/gpu/drm/mali/mali_drm.ko: kernel/drivers/gpu/drm/drm.ko
 kernel/drivers/gpu/drm/udl/udl.ko: kernel/drivers/gpu/drm/drm_kms_helper.ko kernel/drivers/gpu/drm/drm_usb.ko kernel/drivers/gpu/drm/drm.ko kernel/drivers/video/sysimgblt.ko kernel/drivers/video/sysfillrect.ko kernel/drivers/video/syscopyarea.ko
 kernel/drivers/gpu/mali/ump/ump.ko:
 kernel/drivers/gpu/mali/mali/mali.ko: kernel/drivers/gpu/mali/ump/ump.ko
+kernel/drivers/misc/eeprom/eeprom_93cx6.ko:
 kernel/drivers/misc/sunxi-dbgreg.ko:
 kernel/drivers/misc/pwm-sunxi.ko:
 kernel/drivers/mfd/mfd-core.ko:
 kernel/drivers/mfd/wl1273-core.ko: kernel/drivers/mfd/mfd-core.ko
 kernel/drivers/scsi/scsi_wait_scan.ko:
+kernel/drivers/net/wireless/rtl818x/rtl8187/rtl8187.ko: kernel/net/mac80211/mac80211.ko kernel/drivers/misc/eeprom/eeprom_93cx6.ko
 kernel/drivers/net/wireless/rtlwifi/rtlwifi.ko: kernel/net/mac80211/mac80211.ko
 kernel/drivers/net/wireless/rtlwifi/rtl8192c/rtl8192c-common.ko: kernel/net/mac80211/mac80211.ko
 kernel/drivers/net/wireless/rtlwifi/rtl8192cu/rtl8192cu.ko: kernel/drivers/net/wireless/rtlwifi/rtl8192c/rtl8192c-common.ko kernel/drivers/net/wireless/rtlwifi/rtlwifi.ko kernel/net/mac80211/mac80211.ko
