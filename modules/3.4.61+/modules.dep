@@ -18,12 +18,14 @@ kernel/drivers/gpu/drm/mali/mali_drm.ko: kernel/drivers/gpu/drm/drm.ko
 kernel/drivers/gpu/drm/udl/udl.ko: kernel/drivers/gpu/drm/drm_kms_helper.ko kernel/drivers/gpu/drm/drm_usb.ko kernel/drivers/gpu/drm/drm.ko kernel/drivers/video/sysimgblt.ko kernel/drivers/video/sysfillrect.ko kernel/drivers/video/syscopyarea.ko
 kernel/drivers/gpu/mali/ump/ump.ko:
 kernel/drivers/gpu/mali/mali/mali.ko: kernel/drivers/gpu/mali/ump/ump.ko
+kernel/drivers/misc/eeprom/eeprom_93cx6.ko:
 kernel/drivers/misc/sunxi-dbgreg.ko:
 kernel/drivers/misc/pwm-sunxi.ko:
 kernel/drivers/mfd/mfd-core.ko:
 kernel/drivers/mfd/wl1273-core.ko: kernel/drivers/mfd/mfd-core.ko
 kernel/drivers/scsi/scsi_wait_scan.ko:
 kernel/drivers/spi/spi_sunxi.ko:
+kernel/drivers/net/wireless/rtl818x/rtl8187/rtl8187.ko: kernel/net/mac80211/mac80211.ko kernel/drivers/misc/eeprom/eeprom_93cx6.ko
 kernel/drivers/net/wireless/rtlwifi/rtlwifi.ko: kernel/net/mac80211/mac80211.ko
 kernel/drivers/net/wireless/rtlwifi/rtl8192c/rtl8192c-common.ko: kernel/net/mac80211/mac80211.ko
 kernel/drivers/net/wireless/rtlwifi/rtl8192cu/rtl8192cu.ko: kernel/drivers/net/wireless/rtlwifi/rtl8192c/rtl8192c-common.ko kernel/drivers/net/wireless/rtlwifi/rtlwifi.ko kernel/net/mac80211/mac80211.ko
@@ -31,6 +33,7 @@ kernel/drivers/net/wireless/rtl8192cu/8192cu.ko:
 kernel/drivers/net/wireless/rtl8188eu/8188eu.ko:
 kernel/drivers/net/wireless/rtl8189es/8189es.ko:
 kernel/drivers/net/wireless/rtl8723as/8723as.ko:
+kernel/drivers/net/wireless/rndis_wlan.ko: kernel/drivers/net/usb/rndis_host.ko kernel/drivers/net/usb/cdc_ether.ko kernel/drivers/net/usb/usbnet.ko
 kernel/drivers/net/wireless/rt2x00/rt2x00lib.ko: kernel/net/mac80211/mac80211.ko
 kernel/drivers/net/wireless/rt2x00/rt2x00usb.ko: kernel/drivers/net/wireless/rt2x00/rt2x00lib.ko kernel/net/mac80211/mac80211.ko
 kernel/drivers/net/wireless/rt2x00/rt2800lib.ko: kernel/lib/crc-ccitt.ko kernel/drivers/net/wireless/rt2x00/rt2x00lib.ko kernel/net/mac80211/mac80211.ko
@@ -309,14 +312,6 @@ kernel/sound/core/seq/snd-seq-midi.ko: kernel/sound/core/snd-rawmidi.ko kernel/s
 kernel/sound/drivers/snd-aloop.ko:
 kernel/sound/usb/snd-usb-audio.ko: kernel/sound/core/snd-hwdep.ko kernel/sound/usb/snd-usbmidi-lib.ko kernel/sound/core/snd-rawmidi.ko kernel/sound/core/seq/snd-seq-device.ko
 kernel/sound/usb/snd-usbmidi-lib.ko: kernel/sound/core/snd-rawmidi.ko kernel/sound/core/seq/snd-seq-device.ko
-kernel/sound/soc/sunxi/spdif/sunxi_spdif.ko:
-kernel/sound/soc/sunxi/spdif/sunxi_spdma.ko:
-kernel/sound/soc/sunxi/spdif/sndspdif.ko:
-kernel/sound/soc/sunxi/spdif/sunxi_sndspdif.ko:
-kernel/sound/soc/sunxi/i2s/sunxi-i2s.ko:
-kernel/sound/soc/sunxi/i2s/sunxi-i2sdma.ko:
-kernel/sound/soc/sunxi/i2s/sndi2s.ko:
-kernel/sound/soc/sunxi/i2s/sunxi-sndi2s.ko:
 kernel/net/core/pktgen.ko:
 kernel/net/core/netprio_cgroup.ko:
 kernel/net/802/p8022.ko: kernel/net/llc/llc.ko

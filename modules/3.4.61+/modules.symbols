@@ -21,6 +21,7 @@ alias symbol:rt2x00lib_txdone_noinfo rt2x00lib
 alias symbol:drm_mode_connector_detach_encoder drm
 alias symbol:usb_wwan_open usb_wwan
 alias symbol:register_pppox_proto pppox
+alias symbol:eeprom_93cx6_read eeprom_93cx6
 alias symbol:cx231xx_dev_uninit cx231xx
 alias symbol:videobuf_mmap_free videobuf_core
 alias symbol:nf_ct_l3proto_put nf_conntrack
@@ -92,7 +93,6 @@ alias symbol:rt2x00queue_unmap_skb rt2x00lib
 alias symbol:drm_gem_handle_create drm
 alias symbol:rxrpc_get_server_data_key af_rxrpc
 alias symbol:register_ip_vs_app_inc ip_vs
-alias symbol:sndi2s_dai sndi2s
 alias symbol:ath9k_hw_btcoex_init_2wire ath9k_hw
 alias symbol:rt2x00mac_sw_scan_start rt2x00lib
 alias symbol:drm_helper_mode_fill_fb_struct drm_kms_helper
@@ -616,7 +616,6 @@ alias symbol:ath_regd_get_band_ctl ath
 alias symbol:set_h245_addr_hook nf_conntrack_h323
 alias symbol:seq_print_acct nf_conntrack
 alias symbol:stp_proto_register stp
-alias symbol:sunxi_spdif_get_clockrate sunxi_spdif
 alias symbol:cx231xx_tuner_callback cx231xx
 alias symbol:drm_class_device_unregister drm
 alias symbol:garp_register_application garp
@@ -729,6 +728,7 @@ alias symbol:drm_edid_header_is_valid drm
 alias symbol:drm_gtf_mode_complex drm
 alias symbol:ppp_input ppp_generic
 alias symbol:drm_getsarea drm
+alias symbol:eeprom_93cx6_multiread eeprom_93cx6
 alias symbol:drm_mode_crtc_set_gamma_size drm
 alias symbol:drm_addbufs_pci drm
 alias symbol:irlmp_update_client irda
@@ -975,6 +975,7 @@ alias symbol:ath9k_hw_txstart ath9k_hw
 alias symbol:rtl92ce_phy_set_rf_on rtl8192c_common
 alias symbol:rtl92c_set_fw_joinbss_report_cmd rtl8192c_common
 alias symbol:ath_reg_notifier_apply ath
+alias symbol:eeprom_93cx6_write eeprom_93cx6
 alias symbol:ieee80211_enable_rssi_reports mac80211
 alias symbol:unregister_ip_vs_pe ip_vs
 alias symbol:usb_wwan_resume usb_wwan
@@ -1065,7 +1066,6 @@ alias symbol:rt2x00usb_suspend rt2x00usb
 alias symbol:rtl92c_dm_rf_saving rtl8192c_common
 alias symbol:drm_mm_insert_node_in_range drm
 alias symbol:snd_midi_event_encode snd_seq_midi_event
-alias symbol:sndspdif_dai sndspdif
 alias symbol:videobuf_next_field videobuf_core
 alias symbol:set_ras_addr_hook nf_conntrack_h323
 alias symbol:drm_open drm
@@ -1128,6 +1128,7 @@ alias symbol:usbnet_cdc_bind cdc_ether
 alias symbol:drm_mm_dump_table drm
 alias symbol:drm_mm_remove_node drm
 alias symbol:nfnetlink_subsys_unregister nfnetlink
+alias symbol:eeprom_93cx6_wren eeprom_93cx6
 alias symbol:drm_core_reclaim_buffers drm
 alias symbol:nat_callforwarding_hook nf_conntrack_h323
 alias symbol:vb2_get_vma videobuf2_memops

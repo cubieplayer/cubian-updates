@@ -344,6 +344,14 @@ kernel/sound/soc/sunxi/hdmiaudio/sunxi-hdmiaudio.ko
 kernel/sound/soc/sunxi/hdmiaudio/sunxi-hdmipcm.ko
 kernel/sound/soc/sunxi/hdmiaudio/sndhdmi.ko
 kernel/sound/soc/sunxi/hdmiaudio/sunxi-sndhdmi.ko
+kernel/sound/soc/sunxi/i2s/sunxi-i2s.ko
+kernel/sound/soc/sunxi/i2s/sunxi-i2sdma.ko
+kernel/sound/soc/sunxi/i2s/sndi2s.ko
+kernel/sound/soc/sunxi/i2s/sunxi-sndi2s.ko
+kernel/sound/soc/sunxi/spdif/sunxi_spdif.ko
+kernel/sound/soc/sunxi/spdif/sunxi_spdma.ko
+kernel/sound/soc/sunxi/spdif/sndspdif.ko
+kernel/sound/soc/sunxi/spdif/sunxi_sndspdif.ko
 kernel/net/bluetooth/bluetooth.ko
 kernel/net/bluetooth/bnep/bnep.ko
 kernel/net/bluetooth/rfcomm/rfcomm.ko
