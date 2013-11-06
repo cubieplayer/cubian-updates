@@ -643,6 +643,7 @@ alias symbol:ath_regd_get_band_ctl ath
 alias symbol:set_h245_addr_hook nf_conntrack_h323
 alias symbol:seq_print_acct nf_conntrack
 alias symbol:stp_proto_register stp
+alias symbol:sunxi_spdif_get_clockrate sunxi_spdif
 alias symbol:cx231xx_tuner_callback cx231xx
 alias symbol:drm_class_device_unregister drm
 alias symbol:garp_register_application garp
@@ -1118,6 +1119,7 @@ alias symbol:rt2x00usb_suspend rt2x00usb
 alias symbol:rtl92c_dm_rf_saving rtl8192c_common
 alias symbol:drm_mm_insert_node_in_range drm
 alias symbol:snd_midi_event_encode snd_seq_midi_event
+alias symbol:sndspdif_dai sndspdif
 alias symbol:videobuf_next_field videobuf_core
 alias symbol:set_ras_addr_hook nf_conntrack_h323
 alias symbol:drm_open drm
