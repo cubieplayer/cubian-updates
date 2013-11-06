@@ -4708,6 +4708,10 @@ alias usb:v041Ep3F02d*dc*dsc*dp*ic*isc*ip* snd_usb_audio
 alias usb:v041Ep3010d*dc*dsc*dp*ic*isc*ip* snd_usb_audio
 alias usb:v041Ep3048d*dc*dsc*dp*ic*isc*ip* snd_usb_audio
 alias usb:v0403pB8D8d*dc*dsc*dp*ic*isc*ip* snd_usb_audio
+alias platform:sunxi-spdif sunxi_spdif
+alias platform:sunxi-spdif-codec sndspdif
+alias platform:sunxi-i2s sunxi_i2s
+alias platform:sunxi-i2s-codec sndi2s
 alias net-pf-16-proto-12 nfnetlink
 alias nfnetlink-subsys-7 nfnetlink_acct
 alias nfnetlink-subsys-3 nfnetlink_queue

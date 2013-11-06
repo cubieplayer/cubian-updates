@@ -312,6 +312,14 @@ kernel/sound/core/seq/snd-seq-midi.ko
 kernel/sound/drivers/snd-aloop.ko
 kernel/sound/usb/snd-usb-audio.ko
 kernel/sound/usb/snd-usbmidi-lib.ko
+kernel/sound/soc/sunxi/spdif/sunxi_spdif.ko
+kernel/sound/soc/sunxi/spdif/sunxi_spdma.ko
+kernel/sound/soc/sunxi/spdif/sndspdif.ko
+kernel/sound/soc/sunxi/spdif/sunxi_sndspdif.ko
+kernel/sound/soc/sunxi/i2s/sunxi-i2s.ko
+kernel/sound/soc/sunxi/i2s/sunxi-i2sdma.ko
+kernel/sound/soc/sunxi/i2s/sndi2s.ko
+kernel/sound/soc/sunxi/i2s/sunxi-sndi2s.ko
 kernel/net/core/pktgen.ko
 kernel/net/core/netprio_cgroup.ko
 kernel/net/802/p8022.ko
