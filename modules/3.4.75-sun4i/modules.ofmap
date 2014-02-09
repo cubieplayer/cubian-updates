@@ -1,0 +1,3 @@
+# of module          name                 type                 compatible
+mma8450              *                    *                    fsl,mma8450
+mpu3050              *                    *                    invn,mpu3050
